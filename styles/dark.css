@@ -10,3 +10,132 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+
+
+:root .theme_dark {
+
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --title-h2-color: #ff0070;
+  --heading-text-color: #000028;
+  --shadow-color: #ff0070;
+
+  /* фон */
+
+  --accent-color: #ff0070;
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+
+
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.theme_dark .decorated-zone__text {
+  position: absolute;
+  color: var(--title-h2-color);
+  inset-block-start: 10px;
+  inset-inline-end: 39px;
+}
+
+.theme_dark .decorated-zone__text::after {
+  content: "";
+  position: absolute;
+  margin-inline-end: 10px;
+  border-radius: 50%;
+  background-color: var(--title-h2-color);
+  inset-block-start: 28%;
+  inset-inline-start: 129%;
+  inline-size: 12px;
+  block-size: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --title-h2-color: #ff0070;
+    --heading-text-color: #000028;
+    --shadow-color: #ff0070;
+
+    /* фон */
+
+    --accent-color: #ff0070;
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+  }
+
+  .theme_dark .decorated-zone::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-inline-start: 1px solid var(--accent-color);
+    border-block-end: 1px solid var(--accent-color);
+
+  }
+
+  .theme_dark .decorated-zone::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-inline-end: 1px solid var(--accent-color);
+    border-block-start: 1px solid var(--accent-color);
+
+  }
+
+
+  .decorated-zone__text {
+    position: absolute;
+    color: var(--title-h2-color);
+    inset-block-start: 10px;
+    inset-inline-end: 39px;
+  }
+
+  .decorated-zone__text::after {
+    content: "";
+    position: absolute;
+    margin-inline-end: 10px;
+    border-radius: 50%;
+    background-color: var(--title-h2-color);
+    inset-block-start: 28%;
+    inset-inline-start: 135%;
+    inline-size: 9px;
+    block-size: 9px;
+  }
+
+  @media (768px <=width) {
+    /* .theme_dark .decorated-zone__text {
+      inset-block-start: 20px;
+      inset-inline-end: 27px;
+  } 
+  .theme_dark .decorated-zone::after {
+    inset-inline-end: 1px;
+    inset-block-start: 19px;
+} */
+  }
+
+}
