@@ -9,13 +9,17 @@
   --heading-text-color: #000028;
   --shadow-color: #ff0070;
 
+
+   /* переменные текста */
+   --rec-display:flex;
+
   /* фон */
 
   --accent-color: #ff0070;
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
 
-  /* переменные текста */
+ 
 
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
@@ -36,8 +40,10 @@
   --accent-color: #ff0070;
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+  
 
   /* переменные текста */
+  --rec-display:flex;
 
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }

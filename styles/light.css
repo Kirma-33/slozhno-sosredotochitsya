@@ -17,6 +17,9 @@
   --bg-color: #FFF1F7;
   --bg-image: url(../images/cover-image-light.png);
 
+/* переменные текста  */
+  --rec-display:none;
+
 }
 .page .theme_light 
   
@@ -76,11 +79,16 @@
       --heading-text-color: #353430;
       --shadow-color: #FF8DCB;
     
+      /* переменные текста  */
+      --rec-display:none;
+
       /* фон */
     
       --accent-color: #FF8DCB;
       --bg-color: #FFF1F7;
       --bg-image: url(../images/cover-image-light.png);  
+
+      
       }
 
       .theme_light .decorated-zone::before {
@@ -106,6 +114,7 @@
   } 
   
   .theme_light .visually-hidden {
+
     position: absolute;
     width: 1px; 
     height: 1px;

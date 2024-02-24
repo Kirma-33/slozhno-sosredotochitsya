@@ -42,15 +42,17 @@
   inset-block-start: 10px;
 }
 
-.theme_dark .decorated-zone__text {
+ .decorated-zone__text {
+  display: var(--rec-display);
   position: absolute;
   color: var(--title-h2-color);
   inset-block-start: 10px;
   inset-inline-end: 39px;
 }
 
-.theme_dark .decorated-zone__text::after {
+ .decorated-zone__text::after {
   content: "";
+  display: var(--rec-display);
   position: absolute;
   margin-inline-end: 10px;
   border-radius: 50%;

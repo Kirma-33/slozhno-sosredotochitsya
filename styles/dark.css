@@ -26,6 +26,8 @@
   --accent-color: #ff0070;
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+/* переменные текста  */
+  --rec-display:flex;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +44,9 @@
     --accent-color: #ff0070;
     --bg-color: #000028;
     --bg-image: url(../images/cover-image-dark.png);
+
+    /* переменные текста  */
+    --rec-display:flex;
   }
 
 .decorated-zone::before {
