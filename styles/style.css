@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 @import url(../fonts/fonts.css);
 
-
 .page {
   min-width: 375px;
   font-family: "IBM Plex mono", sans-serif;
@@ -16,8 +15,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-
-
 .theme_dark .decorated-zone::before {
   content: "";
   position: absolute;
@@ -27,8 +24,6 @@
   border-block-end: 1px solid var(--accent-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
-
-
 }
 
 .theme_dark .decorated-zone::after {
@@ -42,7 +37,7 @@
   inset-block-start: 10px;
 }
 
- .decorated-zone__text {
+.decorated-zone__text {
   display: var(--rec-display);
   position: absolute;
   color: var(--title-h2-color);
@@ -50,7 +45,7 @@
   inset-inline-end: 39px;
 }
 
- .decorated-zone__text::after {
+.decorated-zone__text::after {
   content: "";
   display: var(--rec-display);
   position: absolute;
@@ -270,7 +265,6 @@
     inset-inline-end: 48px;
   }
 
-
   .theme_dark .decorated-zone__text::after {
     inline-size: 12px;
     block-size: 12px;
@@ -285,7 +279,6 @@
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
-
 
   .header {
     grid-template-rows: 1fr auto 1fr;
@@ -422,7 +415,6 @@
     grid-area: 3 / 2 / 4 / 4;
   }
 
-
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -459,10 +451,6 @@
     margin-block-end: 20px;
     -webkit-margin-after: 20px;
     max-inline-size: 491px;
-  }
-
-  .container {
-    margin: 2vw;
   }
 
   .why-section {
