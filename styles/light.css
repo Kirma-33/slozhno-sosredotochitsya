@@ -32,6 +32,8 @@
 }
 
 
+
+
 .theme_light .visually-hidden {
     position: absolute;
     width: 1px; 
@@ -41,7 +43,7 @@
     border: 0; 
     clip: rect(0 0 0 0); 
     overflow: hidden; 
-  }
+  } 
 
  .theme_light .decorated-zone::before {
     position: absolute;
@@ -53,7 +55,7 @@
     clip: rect(0 0 0 0); 
     overflow: hidden; 
   }
-  
+   
   .theme_light .decorated-zone::after {
     position: absolute;
     width: 1px; 
@@ -63,9 +65,10 @@
     border: 0; 
     clip: rect(0 0 0 0); 
     overflow: hidden; 
-  }
+  } 
 
   @media (prefers-color-scheme: light) {
+
     :root {
       --text-color: #353430;
       --title-color: #FFC2E6;
@@ -80,5 +83,42 @@
       --bg-image: url(../images/cover-image-light.png);  
       }
 
-       
-  }
+      .theme_light .decorated-zone::before {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .theme_light .decorated-zone::after {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+  } 
+  
+  .theme_light .visually-hidden {
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    margin: -1px; 
+    padding: 0; 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+  } 
+
+ 
+
+}
+
+
+  
