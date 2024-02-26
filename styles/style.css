@@ -1,5 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@import url(../fonts/fonts.css);
+
 
 .page {
   min-width: 375px;
@@ -17,27 +16,26 @@
 
 /* Вспомогательные и общие селекторы НАЧАЛО*/
 
-
 /* Декоративные элементы НАЧАЛО */
 
-.theme_dark .decorated-zone::before {
+ .decorated-zone::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--frame-color);
+  border-block-end: 1px solid  var(--frame-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
 
-.theme_dark .decorated-zone::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--frame-color);
+  border-block-start: 1px solid var(--frame-color);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
@@ -133,10 +131,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-
 /* Вспомогательные и общие селекторы КОНЕЦ*/
-
-
 
 /* HEADER НАЧАЛО */
 
@@ -173,7 +168,8 @@
   margin-block-end: 10px;
   -webkit-margin-end: 10px;
   -webkit-margin-after: 10px;
-  max-inline-size: 355px;
+  max-inline-size: 355px; 
+  
 }
 
 .header__theme-menu-list {
@@ -210,12 +206,11 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover);
- 
+
   cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
-  
   outline: none;
 }
 
@@ -274,22 +269,22 @@
 }
 
 @media (768px <=width) {
-  .theme_dark .decorated-zone__text {
+ .decorated-zone__text {
     inset-block-start: 20px;
     inset-inline-end: 48px;
   }
 
-  .theme_dark .decorated-zone__text::after {
+   .decorated-zone__text::after {
     inline-size: 12px;
     block-size: 12px;
   }
 
-  .theme_dark .decorated-zone::before {
+   .decorated-zone::before {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
 
-  .theme_dark .decorated-zone::after {
+   .decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
@@ -444,7 +439,6 @@
     align-self: start;
     margin: 13px 0px 14px 0px;
   }
-  
 
   .header__theme-menu-list {
     flex-direction: row;
@@ -462,8 +456,7 @@
   }
 
   .header-item:nth-child(3) {
-
-    padding-block-end:8px ;
+    padding-block-end: 8px;
   }
   .header__heading {
     margin-block-end: 20px;
@@ -504,6 +497,4 @@
   .gallary {
     margin: calc(30 / 375 * 100vw) 2vw 6.2vw 22px;
   }
-
-
 }

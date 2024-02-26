@@ -1,10 +1,5 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root .theme_light {
+  --frame-color: #353430;
   --button-hover:#ff8dcb;
   --text-color: #353430;
   --title-color: #ffc2e6;
@@ -22,15 +17,6 @@
   --rec-display: none;
 }
 
-
-
-.page .theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
 .theme_light .visually-hidden {
   position: absolute;
   width: 1px;
@@ -42,30 +28,9 @@
   clip: rect(0 0 0 0);
 }
 
-.theme_light .decorated-zone::before {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.theme_light .decorated-zone::after {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
 @media (prefers-color-scheme: light) {
-  :root {
+  :root .theme_light  {
+    --frame-color: #353430;
     --button-hover:#ff8dcb;
     --text-color: #353430;
     --title-color: #ffc2e6;
@@ -81,28 +46,6 @@
     --accent-color: #ff8dcb;
     --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
-  }
-
-  .theme_light .decorated-zone::before {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-  }
-
-  .theme_light .decorated-zone::after {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
   }
 
   .theme_light .visually-hidden {

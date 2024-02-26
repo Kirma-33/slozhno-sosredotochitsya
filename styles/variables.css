@@ -1,7 +1,6 @@
 :root {
   /* Переменные цвета */
-
-  /* характеристики]текста */
+  --frame-color: #ff0070;
   --button-hover:#f1b2ce;
   --accent-family: "IBM Plex mono";
   --text-color: #f1b2ce;
@@ -18,29 +17,5 @@
   --accent-color: #ff0070;
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
-
-  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
-:root .theme-dark {
-  /* Переменные цвета */
-
-  /* Цвет текста */
-  --button-hover:#f1b2ce;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --title-h2-color: #ff0070;
-  --heading-text-color: #000028;
-  --shadow-color: #ff0070;
-
-  /* фон */
-
-  --accent-color: #ff0070;
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-
-  /* переменные текста */
-  --rec-display: flex;
-
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
