@@ -30,22 +30,22 @@
 @media (prefers-color-scheme: dark) {
 
   @media (768px <=width) {
-    .decorated-zone__text {
+    .page .decorated-zone__text {
       inset-block-start: 20px;
       inset-inline-end: 48px;
     }
 
-    .decorated-zone__text::after {
+    .page .decorated-zone__text::after {
       inline-size: 12px;
       block-size: 12px;
     }
 
-    .decorated-zone::before {
+    .page .decorated-zone::before {
       inset-inline-start: 20px;
       inset-block-end: 20px;
     }
 
-    .decorated-zone::after {
+    .page .decorated-zone::after {
       inset-inline-end: 20px;
       inset-block-start: 20px;
     }
