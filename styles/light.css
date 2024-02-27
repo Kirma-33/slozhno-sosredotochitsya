@@ -1,5 +1,4 @@
 :root .theme_light {
-  --frame-color: #353430;
   --button-hover:#ff8dcb;
   --text-color: #353430;
   --title-color: #ffc2e6;
@@ -29,8 +28,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root .theme_light  {
-    --frame-color: #353430;
+  :root {
     --button-hover:#ff8dcb;
     --text-color: #353430;
     --title-color: #ffc2e6;

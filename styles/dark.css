@@ -1,19 +1,6 @@
-@media (prefers-color-scheme: dark) {
 
-  @media (768px <=width) {
-    .page .decorated-zone__text {
-      inset-block-start: 20px;
-      inset-inline-end: 48px;
-    }
 
-    .page .decorated-zone__text::after {
-      inline-size: 12px;
-      block-size: 12px;
-    }
-  }
-
-  :root {
-    --frame-color: #ff0070;
+  :root .theme_dark {
     --text-color: #f1b2ce;
     --title-color: #db00ff;
     --title-h2-color: #ff0070;
@@ -30,5 +17,3 @@
     --rec-display: flex;
   }
 
-  
-}
