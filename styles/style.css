@@ -82,7 +82,7 @@
 }
 
 .section-title {
-  color: var(--accent-color);
+  color: var(--title-h2-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;

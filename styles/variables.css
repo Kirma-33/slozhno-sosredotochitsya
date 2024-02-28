@@ -1,6 +1,6 @@
 :root  {
   /* Переменные цвета */
-  --button-hover:#f1b2ce;
+  --button-hover:#FF007066;
   --accent-family: "IBM Plex mono";
   --text-color: #f1b2ce;
   --title-color: #db00ff;
@@ -22,7 +22,7 @@
 
 @media (prefers-color-scheme: light) {
   :root .theme_light  {
-    --button-hover:#ff8dcb;
+    --button-hover:#32312D66;
     --text-color: #353430;
     --title-color: #ffc2e6;
     --title-h2-color: #353430;

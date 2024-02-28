@@ -1,6 +1,7 @@
 
 
   :root .theme_dark {
+    --button-hover:#FF007066;
     --text-color: #f1b2ce;
     --title-color: #db00ff;
     --title-h2-color: #ff0070;
